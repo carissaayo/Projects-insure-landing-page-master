@@ -19,8 +19,42 @@ header{
     justify-content: space-between;
     padding:20px 15px;
     text-align: left !important;
+    position:relative; /* For Changing the positon of the close image  */
+}
+/* close image Styles */
+#close-img{
+    position:absolute;
+    right:15px;
+    display: none; /* not to be shown intially */
+}
+nav{
+    margin-bottom: 600px;
+    position:relative
 }
 /*  Close the Navbar style */
-header ul{
-    display:none
+#show-nav{
+    /* display:none ;*/
+    position:absolute;
+    top:-20px;
+    padding:30px 20px;
+    background-image: url(../images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color:white;
+    width:400px;
+    height:600px;
+    background-color: hsl(270, 9%, 17%);
+    font-size:1.7em;/* 27.2px */
+    font-weight:700;
+    list-style: none;
+    
+}
+#hide-nav{
+    display: none;
+}
+nav ul li{
+    margin:20px;
+    border:2px solid hsl(0, 0%, 98%);
+    padding:10px;
+    text-transform: uppercase;
 }
