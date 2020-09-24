@@ -22,20 +22,31 @@ header{
     position:relative; /* For Changing the positon of the close image  */
 }
 /* close image Styles */
-#close-img{
-    position:absolute;
-    right:15px;
+.close-img{
     display: none; /* not to be shown intially */
 }
+
+/* display Harmburger Menu */
+.show-close-menu{
+    position:absolute;
+    right:15px;
+    display: block;
+}
+/* Close Harmburger */
+.close-harmburger{
+    display: none;
+}
 nav{
-    margin-bottom: 600px;
-    position:relative
+    /* margin-bottom: 600px; */
+    position:relative;
 }
 /*  Close the Navbar style */
 #show-nav{
-    /* display:none ;*/
+    
     position:absolute;
-    top:-20px;
+    top:76px;
+    width:1500px;
+    /* left:20px; */
     padding:30px 20px;
     background-image: url(../images/bg-pattern-mobile-nav.svg);
     background-repeat: no-repeat;
@@ -49,7 +60,8 @@ nav{
     list-style: none;
     
 }
-#hide-nav{
+
+.hide-nav{
     display: none;
 }
 nav ul li{
