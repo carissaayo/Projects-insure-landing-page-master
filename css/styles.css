@@ -106,3 +106,7 @@ nav ul li{
 .why-us-min-con h4{
     font-size:2em
 }
+.why-us-min-con p{
+    padding: 0 70px;
+    margin-bottom: 60px;
+}
