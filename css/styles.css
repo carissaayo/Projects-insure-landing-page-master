@@ -59,7 +59,9 @@ nav ul li{
     text-transform: uppercase;
 }
 /* Hero Styles */
-
+#hero-section{
+    margin-bottom:100px
+}
 #hero-img-con img{
     width:100%;
     height:350px;
@@ -79,4 +81,15 @@ nav ul li{
 }
 #hero-text-con h1{
    padding:0 60px;
+}
+
+/* Button Generic Styles */
+.btn{
+    color:white;
+    background-color:hsl(256, 26%, 20%);
+    border:1px solid white;
+    width:35%;
+    padding:10px;
+    text-transform: uppercase;
+    margin-bottom:40px;
 }
