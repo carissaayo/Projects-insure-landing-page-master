@@ -136,6 +136,7 @@ nav ul li{
 /* Footer Styles */
 footer ul{
     list-style: none;
+    text-transform: uppercase;
 }
 #images-con{
     height:200px;
@@ -146,4 +147,14 @@ footer ul{
 }
 #social-media-img-con > img{
     margin:0 7px;
+}
+/* Service Section Styles */
+.service> li:first-child{
+    font-size:2em;
+    color:hsl(273, 4%, 51%);
+    margin:50px 0;
+    padding:0;
+}
+.service li{
+    padding: 10px
 }
