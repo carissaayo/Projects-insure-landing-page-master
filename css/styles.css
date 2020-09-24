@@ -130,7 +130,10 @@ nav ul li{
     font-weight: 700;
 }
 #how-we-work-btn{
-    /* color:white; */
     width:40%
-    
+}
+
+/* Footer Styles */
+footer ul{
+    list-style: none;
 }
