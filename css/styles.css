@@ -59,7 +59,9 @@ nav ul li{
     text-transform: uppercase;
 }
 /* Hero Styles */
-#hero-sec
+#hero-section{
+    margin-bottom:100px
+}
 #hero-img-con img{
     width:100%;
     height:350px;
@@ -79,4 +81,80 @@ nav ul li{
 }
 #hero-text-con h1{
    padding:0 60px;
+}
+
+/* Button Generic Styles */
+.btn{
+    color:hsl(0, 0%, 98%);
+    background-color:hsl(256, 26%, 20%);
+    border:2px solid hsl(273, 4%, 51%);
+    width:35%;
+    padding:10px;
+    text-transform: uppercase;
+    margin-bottom:40px;
+}
+/* why-us-main-con Section Styles */
+#why-us-main-con h1{
+    font-size: 3.4em; /* 54.4px */
+    font-weight: 700;
+}
+#why-us-main-con{
+    margin-bottom: 200px;
+}
+
+/* why-us-min-con Styles */
+.why-us-min-con img{
+    width:30% ;
+    margin-bottom:20px;
+}
+.why-us-min-con h4{
+    font-size:2em
+}
+.why-us-min-con p{
+    padding: 0 70px;
+    margin-bottom: 60px;
+}
+/* how-we-work  Styles*/
+#how-we-work{
+    padding:20px 20px;
+    background-color: hsl(256, 26%, 20%);
+    width: 90%;
+    margin:30px auto;
+    margin-bottom: 300px;
+    background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    color:hsl(0, 0%, 98%)
+}
+#how-we-work h2{
+    font-size:3em; /* 48px */
+    font-weight: 700;
+}
+#how-we-work-btn{
+    width:40%
+}
+
+/* Footer Styles */
+footer ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+#images-con{
+    height:200px;
+}
+#images-con> img:first-child{
+    margin:30px;
+
+}
+#social-media-img-con > img{
+    margin:0 7px;
+}
+/* Service Section Styles */
+.service> li:first-child{
+    font-size:1.5em;
+    color:hsl(273, 4%, 51%);
+    margin:50px 0;
+    padding:0;
+}
+.service li{
+    padding: 10px
 }
