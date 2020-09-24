@@ -9,5 +9,12 @@ body{
     text-align: center;
     font-size: 16px;
     font-weight:400;
+    margin:0;
+    padding:0 45px;
     background-color: hsl(0, 0%, 98%);
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
 }
