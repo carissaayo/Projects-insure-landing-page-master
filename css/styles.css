@@ -10,7 +10,7 @@ body{
     font-size: 16px;
     font-weight:400;
     margin:0;
-    /* padding:0 45px; */
+    /* position:relative; */
     background-color: hsl(0, 0%, 98%);
 }
 /* Header Styles */
@@ -22,41 +22,47 @@ header{
     position:relative; /* For Changing the positon of the close image  */
 }
 /* close image Styles */
-#close-img{
-    position:absolute;
-    right:15px;
+.close-img{
     display: none; /* not to be shown intially */
 }
-nav{
-    margin-bottom: 600px;
-    position:relative
-}
-/*  Close the Navbar style */
-#show-nav{
-    /* display:none ;*/
+
+/* display Harmburger Menu */
+.show-close-menu{
     position:absolute;
-    top:-20px;
+    right:15px;
+    display: block;
+}
+/* Close Harmburger */
+.close-harmburger{
+    display: none;
+}
+
+/* Navbar style */
+.show-nav{
+ 
     padding:30px 20px;
     background-image: url(../images/bg-pattern-mobile-nav.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-color: hsl(270, 9%, 17%);
     color:white;
-    width:400px;
     height:600px;
     font-size:1.7em;/* 27.2px */
-    font-weight:700;
-    list-style: none;
-    
+    font-weight:700;   
 }
-#hide-nav{
+.hide-nav{
     display: none;
 }
-nav ul li{
-    margin:20px;
+nav ul li:hover{
     border:2px solid hsl(0, 0%, 98%);
+}
+nav ul li{
+     list-style: none;
+    margin:20px;
+    /* border:2px solid hsl(0, 0%, 98%); */
     padding:10px;
     text-transform: uppercase;
+    /* margin-right:10000px */
 }
 /* Hero Styles */
 #hero-section{
