@@ -93,6 +93,16 @@ nav ul li{
     text-transform: uppercase;
     margin-bottom:40px;
 }
+/* why-us-main-con Section Styles */
 #why-us-main-con h1{
-    
+    font-size: 3.4em; /* 54.4px */
+    font-weight: 700;
+}
+/* why-us-min-con Styles */
+.why-us-min-con img{
+    width:30% ;
+    margin-bottom:20px;
+}
+.why-us-min-con h4{
+    font-size:2em
 }
