@@ -85,9 +85,9 @@ nav ul li{
 
 /* Button Generic Styles */
 .btn{
-    color:white;
+    color:hsl(0, 0%, 98%);
     background-color:hsl(256, 26%, 20%);
-    border:1px solid white;
+    border:2px solid hsl(273, 4%, 51%);
     width:35%;
     padding:10px;
     text-transform: uppercase;
@@ -98,6 +98,10 @@ nav ul li{
     font-size: 3.4em; /* 54.4px */
     font-weight: 700;
 }
+#why-us-main-con{
+    margin-bottom: 200px;
+}
+
 /* why-us-min-con Styles */
 .why-us-min-con img{
     width:30% ;
@@ -110,6 +114,23 @@ nav ul li{
     padding: 0 70px;
     margin-bottom: 60px;
 }
-#why-us-main-con{
-    margin-bottom: 200px;
+/* how-we-work  Styles*/
+#how-we-work{
+    padding:20px 20px;
+    background-color: hsl(256, 26%, 20%);
+    width: 90%;
+    margin:30px auto;
+    margin-bottom: 300px;
+    background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    color:hsl(0, 0%, 98%)
+}
+#how-we-work h2{
+    font-size:3em; /* 48px */
+    font-weight: 700;
+}
+#how-we-work-btn{
+    /* color:white; */
+    width:40%
+    
 }
