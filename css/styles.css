@@ -137,3 +137,13 @@ nav ul li{
 footer ul{
     list-style: none;
 }
+#images-con{
+    height:200px;
+}
+#images-con> img:first-child{
+    margin:30px;
+
+}
+#social-media-img-con > img{
+    margin:0 7px;
+}
