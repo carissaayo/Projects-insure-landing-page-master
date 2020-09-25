@@ -172,9 +172,6 @@ footer ul{
 /* Desktop Styles */
 @media screen and (min-width:1440px){
     /* Button Generic Styles */
-    body{
-        /* display: none; */
-    }
     .btn{
         background-color: white;
         color:hsl(256, 26%, 20%);
