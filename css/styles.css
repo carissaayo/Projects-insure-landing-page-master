@@ -36,6 +36,10 @@ header{
 .close-harmburger{
     display: none;
 }
+/* Desktop-Nav to be displayed in Desktop Styles */
+#desktop-nav {
+    display: none
+}
 
 /* Navbar style */
 .show-nav{
