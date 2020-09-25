@@ -264,4 +264,23 @@ footer ul{
         font-size:0.81em ;/* 12.96px */
     }
 
+    /* how-we-work Section Styles */
+    #how-we-work{
+        display:grid;
+        text-align:left;
+        grid-template: 1fr/500px 400px;
+        grid-gap:0 500px;
+    }
+    #how-we-work h2{
+       padding:0  30px 0 20px;
+        margin-left:30px
+    }
+    #how-we-work button{
+        width:35%;
+        height:40px;
+        margin: 70px 50px 50px 50px;
+        cursor: pointer;
+        color:hsl(256, 26%, 20%);
+    }
+
 }
