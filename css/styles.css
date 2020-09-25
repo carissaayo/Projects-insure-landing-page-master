@@ -172,6 +172,9 @@ footer ul{
 /* Desktop Styles */
 @media screen and (min-width:1440px){
     /* Button Generic Styles */
+    body{
+        /* display: none; */
+    }
     .btn{
         background-color: white;
         color:hsl(256, 26%, 20%);
@@ -284,5 +287,27 @@ footer ul{
         cursor: pointer;
         color:hsl(256, 26%, 20%);
     }
+    /* Footer Styles */
+    #images-con{
+        display: flex;
+        justify-content: space-between;
+        margin:200px 100px 0 200px;
+    }
+    #images-con >img:first-child{
+        width:10%;
+        height:20px
+    }
+    #social-media-img-con {
+        margin-top:40px
+    }
+    #details{
+        display: flex;
+        margin:0 300px 50px 150px;
+        justify-content: space-between;
+    }
+    .service li{
+        cursor: pointer;
+    }
+
 
 }
