@@ -200,11 +200,39 @@ footer ul{
         color:white;
         cursor:pointer
     }
+    /* To remove Harmburger and close image */
     span{
         display:none;
     }
-    #hero-img-con img{
-        height:auto;
-        width:30%;
+    
+    /* Desktop Hero Section */
+    #hero-section{
+        /* background-image: url(); */
+        background-color: hsl(256, 26%, 20%);
+        display:grid;
+        grid-template: 350px/ 1fr 1fr;
+        grid-template-areas: 'text image';
+        padding: 100px 40px;
+        grid-gap: 0 10px
+    }
+    #hero-img-con{
+        grid-area:image;
+        width: 60%;
+    }
+    #hero-img-con img {
+        height: auto;
+        margin-top:40px
+    }
+    #hero-text-con{
+        grid-area:text;
+        padding-right:50px;
+        margin-left:100px;
+        text-align: left;
+        background-image: none;
+        background-color:none;
+    }
+    #hero-text-con h1{
+        font-size:3em;
+        padding:0
     }
 }
