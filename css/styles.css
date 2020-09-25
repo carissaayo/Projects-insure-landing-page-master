@@ -160,7 +160,7 @@ footer ul{
 }
 /* Service Section Styles */
 .service> li:first-child{
-    font-size:1.5em;
+    font-size:1.5em;/* 24px */
     color:hsl(273, 4%, 51%);
     margin:50px 0;
     padding:0;
@@ -238,7 +238,30 @@ footer ul{
         background-color:none;
     }
     #hero-text-con h1{
-        font-size:3em;
+        font-size:3em;/* 48px */
         padding:0
     }
+
+    /* why-us-main-con Section Styles */
+    #why-us-main-con{
+        margin:300px 200px 50px 200px;
+        text-align: left;
+        
+    }
+    #why-us-main-con h1{
+        font-size: 4em;/* 64px */
+        margin-bottom:100px;
+    }
+    /* why-us-min-con Grid styles */
+    #why-us-grid-con{
+        display:grid;
+        grid-template:1fr/1fr 1fr 1fr;
+        grid-gap:0 20px;
+        margin:0
+    }
+    .why-us-min-con p{
+        padding:0 0px 0 0 ;
+        font-size:0.81em ;/* 12.96px */
+    }
+
 }
