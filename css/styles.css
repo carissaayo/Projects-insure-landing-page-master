@@ -63,10 +63,8 @@ nav ul li:hover{
 nav ul li{
      list-style: none;
     margin:20px;
-    /* border:2px solid hsl(0, 0%, 98%); */
     padding:10px;
     text-transform: uppercase;
-    /* margin-right:10000px */
 }
 /* Hero Styles */
 #hero-section{
@@ -202,8 +200,6 @@ footer ul{
         cursor: pointer;
     }
     #desktop-nav ul li:hover{
-        background-color: hsl(256, 26%, 20%);
-        color:white;
         cursor:pointer
     }
     /* To remove Harmburger and close image */
