@@ -164,3 +164,22 @@ footer ul{
 .service li{
     padding: 10px
 }
+
+/* Desktop Styles */
+@media screen and (min-width:1440px){
+
+    body{
+       /* padding:0 10px */
+    }
+    /* Header Styles */
+    header{
+        display: inline;
+    }
+    span{
+        display:none;
+    }
+    #hero-img-con img{
+        height:auto;
+        width:30%;
+    }
+}
