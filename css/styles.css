@@ -146,13 +146,17 @@ nav ul li{
 }
 
 /* Footer Styles */
+footer{
+background-image: url(../images/bg-pattern-footer-mobile.svg);
+background-repeat: no-repeat;
+}
 footer ul{
     list-style: none;
     text-transform: uppercase;
 }
 #images-con{
     height:200px;
-    background-image: url(../images/bg-pattern-footer-mobile.svg);
+    
 }
 #images-con> img:first-child{
     margin:30px;
@@ -295,10 +299,15 @@ footer ul{
         background-color:hsl(256, 26%, 20%);
     }
     /* Footer Styles */
+    footer{
+        background-image: url(../images/bg-pattern-footer-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 0 150px;
+    }
     #images-con{
         display: flex;
         justify-content: space-between;
-        margin:200px 100px 0 200px;
+        margin:200px 140px 0 200px;
     }
     #images-con >img:first-child{
         width:10%;
