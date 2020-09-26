@@ -152,6 +152,7 @@ footer ul{
 }
 #images-con{
     height:200px;
+    background-image: url(../images/bg-pattern-footer-mobile.svg);
 }
 #images-con> img:first-child{
     margin:30px;
