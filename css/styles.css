@@ -132,8 +132,9 @@ nav ul li{
     width: 90%;
     margin:30px auto;
     margin-bottom: 300px;
-    background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+    background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
     background-repeat: no-repeat;
+    background-position: 100% 0;
     color:hsl(0, 0%, 98%)
 }
 #how-we-work h2{
