@@ -277,7 +277,10 @@ footer ul{
         grid-template: 1fr/500px 400px;
         grid-gap:0 200px;
         margin:0 200px;
-        width:75%
+        width:75%;
+        background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 100% 0;
     }
     #how-we-work h2{
        padding:0  30px 0 20px;
@@ -288,7 +291,8 @@ footer ul{
         height:40px;
         margin: 70px 50px 50px 50px;
         cursor: pointer;
-        color:hsl(256, 26%, 20%);
+        color:white;
+        background-color:hsl(256, 26%, 20%);
     }
     /* Footer Styles */
     #images-con{
