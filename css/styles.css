@@ -214,21 +214,26 @@ footer ul{
     
     /* Desktop Hero Section */
     #hero-section{
-        /* background-image: url(); */
+        background-image: url(../images/bg-pattern-intro-left-desktop.svg),
+        url(../images/bg-pattern-intro-right-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 0 300px, 93% -180px;
         background-color: hsl(256, 26%, 20%);
         display:grid;
         grid-template: 350px/ 1fr 1fr;
         grid-template-areas: 'text image';
-        padding: 100px 40px;
-        grid-gap: 0 10px
+        padding: 50px 40px;
+        grid-gap: 0 200px;
+    
     }
     #hero-img-con{
         grid-area:image;
-        width: 60%;
+        z-index: 0;
+        width: 70%;
     }
     #hero-img-con img {
         height: auto;
-        margin-top:40px
+        margin-top:20px
     }
     #hero-text-con{
         grid-area:text;
