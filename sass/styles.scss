@@ -10,9 +10,6 @@
 body {
   font-size: 16px;
   font-weight: 400;
-  // padding:0 10%;
-  // text-align: center
-  // overflow: hidden
 }
 
 header {
@@ -133,22 +130,24 @@ header {
 }
 #how-we-work {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 50% 20%;
   grid-template-rows: 80px;
-  padding: 30px 0% 30px 5%;
+  padding: 50px 0% 30px 5%;
   background-color: $DarkViolet;
-  column-gap: 10%;
+  column-gap: 20%;
   color: $VeryLightGray;
   background-image: url("../images/bg-pattern-intro-right-desktop.svg");
   background-repeat: no-repeat;
   background-position: 590px -160px;
   margin-bottom: 100px;
+  height:200px;
   h2 {
-    padding-right: 50%;
-    font-size: 2em;
+    padding-right: 18%;
+    font-size: 2.5em;
+    width:100%;
   }
   .btn {
-    width: 60%;
+    width: 80%;
     height: 30px;
     text-transform: uppercase;
     padding: 0 4%;
@@ -156,6 +155,7 @@ header {
     background-color: inherit;
     color: $VeryLightGray;
     border: 1px solid $VeryLightGray;
+    @include cursor();
   }
 }
 
@@ -188,3 +188,4 @@ footer {
     }
   }
 }
+@import 'mobile';

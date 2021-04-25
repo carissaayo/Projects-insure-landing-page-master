@@ -150,25 +150,27 @@ header .mobile-nav {
 
 #how-we-work {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 50% 20%;
   grid-template-rows: 80px;
-  padding: 30px 0% 30px 5%;
+  padding: 50px 0% 30px 5%;
   background-color: #2d2640;
-  column-gap: 10%;
+  column-gap: 20%;
   color: #fafafa;
   background-image: url("../images/bg-pattern-intro-right-desktop.svg");
   background-repeat: no-repeat;
   background-position: 590px -160px;
   margin-bottom: 100px;
+  height: 200px;
 }
 
 #how-we-work h2 {
-  padding-right: 50%;
-  font-size: 2em;
+  padding-right: 18%;
+  font-size: 2.5em;
+  width: 100%;
 }
 
 #how-we-work .btn {
-  width: 60%;
+  width: 80%;
   height: 30px;
   text-transform: uppercase;
   padding: 0 4%;
@@ -176,6 +178,7 @@ header .mobile-nav {
   background-color: inherit;
   color: #fafafa;
   border: 1px solid #fafafa;
+  cursor: pointer;
 }
 
 footer {
@@ -216,5 +219,156 @@ footer #details ul li:first-child {
 
 footer #details .links {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  header #logo-con {
+    margin-right: 5%;
+  }
+  header nav {
+    width: 60%;
+  }
+  #how-we-work {
+    column-gap: 20%;
+  }
+  #how-we-work h2 {
+    padding-right: 15%;
+    font-size: 2.5em;
+    width: 100%;
+  }
+  #how-we-work .btn {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 1048px) {
+  body {
+    text-align: center;
+  }
+  #how-we-work h2 {
+    padding-right: 1%;
+    font-size: 2.3em;
+    width: 100%;
+  }
+  #how-we-work .btn {
+    width: 100%;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  header {
+    padding: 30px 4%;
+  }
+  header nav {
+    display: none;
+  }
+  header .mobile-nav {
+    display: block;
+    cursor: pointer;
+  }
+  header .mobile-nav #cross {
+    display: none;
+  }
+  #hero-section {
+    height: 850px;
+    padding: 0px;
+    margin-bottom: 100px;
+    display: block;
+  }
+  #hero-section #hero-img-con {
+    height: 300px;
+    width: 100%;
+  }
+  #hero-section #hero-img-con img {
+    height: 300px;
+    width: 100%;
+    margin-top: 0px;
+  }
+  #hero-section #hero-text-con {
+    margin-top: 90px;
+    padding: 0 10%;
+    text-align: center;
+  }
+  #hero-section #hero-text-con h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  #hero-section #hero-text-con p {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  #why-us-main-con h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+  }
+  #why-us-main-con #why-us-grid-con {
+    display: block;
+    margin-bottom: 100px;
+  }
+  #why-us-main-con #why-us-grid-con .why-us-min-con img,
+  #why-us-main-con #why-us-grid-con .why-us-min-con h4,
+  #why-us-main-con #why-us-grid-con .why-us-min-con p {
+    margin-bottom: 15px;
+  }
+  #why-us-main-con #why-us-grid-con .why-us-min-con {
+    padding: 0px 10%;
+    font-size: 2em;
+  }
+  #why-us-main-con #why-us-grid-con .why-us-min-con p {
+    color: #837d87;
+  }
+  #how-we-work {
+    display: block;
+    padding: 30px 20%;
+    height: 250px;
+  }
+  #how-we-work h2 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-right: 0px;
+  }
+  #how-we-work .btn {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #how-we-work {
+    display: block;
+    padding: 30px 10%;
+    height: 200px;
+  }
+  #how-we-work h2 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-right: 0px;
+  }
+  #how-we-work .btn {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  footer #details {
+    display: block;
+  }
+  footer ul {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #how-we-work {
+    display: block;
+    padding: 30px 10%;
+    height: 250px;
+  }
+  #how-we-work h2 {
+    padding-right: 0px;
+  }
+  #how-we-work .btn {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
