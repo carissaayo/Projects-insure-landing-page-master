@@ -84,6 +84,17 @@ header {
     h1 {
       font-size: 3.125em;
     }
+    p{
+      margin-bottom: 20px;
+    }
+    button{
+      background-color: inherit;
+    color: $VeryLightGray;
+    border: 1px solid $VeryLightGray;
+    text-transform: uppercase;
+    width: 30%;
+    padding:10px 2%;
+    }
   }
 }
 #why-us-main-con,

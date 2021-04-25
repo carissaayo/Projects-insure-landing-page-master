@@ -98,6 +98,19 @@ header .mobile-nav {
   font-size: 3.125em;
 }
 
+#hero-section #hero-text-con p {
+  margin-bottom: 20px;
+}
+
+#hero-section #hero-text-con button {
+  background-color: inherit;
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  text-transform: uppercase;
+  width: 30%;
+  padding: 10px 2%;
+}
+
 #why-us-main-con,
 #how-we-work {
   margin: 0px 12%;
