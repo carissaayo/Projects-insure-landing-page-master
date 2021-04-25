@@ -1,0 +1,179 @@
+@import "variables";
+
+*,
+*::after,
+*::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-weight: 400;
+  // padding:0 10%;
+  // text-align: center
+  // overflow: hidden
+}
+
+header {
+  @include flex();
+  padding: 30px 12%;
+  background-color: $VeryLightGray;
+  position: relative;
+  z-index: 100;
+  #logo-con {
+    margin-right: 10%;
+  }
+  nav {
+    width: 50%;
+    ul {
+      @include flex();
+      li {
+        padding: 5px 10px;
+        text-transform: uppercase;
+        &:hover {
+          border: 2px solid $DarkViolet;
+          @include cursor();
+          color: $DarkViolet;
+        }
+        color: $DarkGrayishViolet;
+      }
+      list-style: none;
+      width: 100%;
+    }
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+.pattern-img-con {
+  #pattern-left {
+    position: absolute;
+    top: 350px;
+    left: 0px;
+  }
+  #pattern-right {
+    position: absolute;
+    top: 90px;
+    height: 400px;
+    width: 30%;
+    right: 0px;
+  }
+}
+#hero-section {
+  height: 500px;
+  padding: 60px 12%;
+  margin-bottom: 300px;
+  color: $VeryLightGray;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 40%;
+  grid-template-areas: "text img";
+  background-color: $VeryDarkViolet;
+  #hero-img-con {
+    grid-area: img;
+    width: 100%;
+    img {
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+  #hero-text-con {
+    margin-top: 60px;
+    padding-right: 4%;
+    h1 {
+      font-size: 3.125em;
+    }
+  }
+}
+#why-us-main-con,
+#how-we-work {
+  margin: 0px 12%;
+}
+#why-us-main-con {
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  #why-us-grid-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "process prices people";
+    margin-bottom: 100px;
+    .why-us-min-con {
+      img,
+      h4,
+      p {
+        margin-bottom: 15px;
+      }
+    }
+    #process {
+      grid-area: process;
+    }
+    #prices {
+      grid-area: prices;
+    }
+    #people {
+      grid-area: people;
+    }
+  }
+}
+#how-we-work {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 80px;
+  padding: 30px 0% 30px 5%;
+  background-color: $DarkViolet;
+  column-gap: 10%;
+  color: $VeryLightGray;
+  background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 590px -160px;
+  margin-bottom: 100px;
+  h2 {
+    padding-right: 50%;
+    font-size: 2em;
+  }
+  .btn {
+    width: 60%;
+    height: 30px;
+    text-transform: uppercase;
+    padding: 0 4%;
+    margin-top: 30px;
+    background-color: inherit;
+    color: $VeryLightGray;
+    border: 1px solid $VeryLightGray;
+  }
+}
+
+footer {
+  padding: 60px 12%;
+  background-color: $VeryLightGray;
+  #images-con {
+    @include flex();
+    border-bottom: 1px solid $GrayishBlue;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+  }
+  #details {
+    @include flex();
+    margin-bottom: 20px;
+      ul {
+      list-style: none;
+      text-transform: uppercase;
+      li{
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      li:first-child {
+        color: $GrayishBlue;
+        margin-bottom: 20px;
+      }
+    }
+    .links{
+      margin-bottom: 20px;
+    }
+  }
+}
