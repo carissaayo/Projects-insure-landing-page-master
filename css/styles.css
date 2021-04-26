@@ -9,6 +9,13 @@
 body {
   font-size: 16px;
   font-weight: 400;
+  font-family: "Karla", sans-serif;
+}
+
+h1,
+h2,
+h4 {
+  font-family: "DM Serif Display", serif;
 }
 
 header {
@@ -49,6 +56,10 @@ header nav ul li:hover {
   color: #2d2640;
 }
 
+header .mobile-nav-controls {
+  display: none;
+}
+
 .pattern-img-con #pattern-left {
   position: absolute;
   top: 350px;
@@ -63,12 +74,12 @@ header nav ul li:hover {
   right: 0px;
 }
 
-.hide-nav {
+.mobile-hero-left-pattern-con,
+.mobile-hero-right-pattern-con {
   display: none;
 }
 
-.mobile-hero-left-pattern-con,
-.mobile-hero-right-pattern-con {
+.mobile-nav {
   display: none;
 }
 
@@ -317,14 +328,11 @@ footer #details .links {
   header .mobile-nav-controls .close-menu {
     display: none;
   }
-  header .mobile-nav-controls .close-hamburger {
-    display: none;
-  }
   .pattern-img-con {
     display: none;
   }
-  .mobile-nav {
-    display: none;
+  .show-nav-con {
+    display: block;
     background-color: #2b272f;
     height: 500px;
     height: auto;
@@ -332,28 +340,25 @@ footer #details .links {
     padding-top: 50px;
     font-size: 1.2em;
   }
-  .mobile-nav ul {
+  .show-nav-con ul {
     margin-bottom: 70px;
   }
-  .mobile-nav ul li {
+  .show-nav-con ul li {
     padding: 5px 10px;
     text-transform: uppercase;
     color: #fafafa;
     width: 100%;
     margin-bottom: 20px;
   }
-  .mobile-nav ul li:hover {
+  .show-nav-con ul li:hover {
     border: 2px solid #fafafa;
     cursor: pointer;
   }
-  .mobile-nav .mobile-nav-pattern-con {
+  .show-nav-con .mobile-nav-pattern-con {
     width: 100%;
   }
-  .mobile-nav .mobile-nav-pattern-con img {
+  .show-nav-con .mobile-nav-pattern-con img {
     width: 100%;
-  }
-  .show-nav {
-    display: block;
   }
   #hero-section {
     height: auto;
@@ -384,11 +389,13 @@ footer #details .links {
     font-size: 2em;
     margin-bottom: 20px;
   }
-  .mobile-hero-right-pattern-con, .mobile-hero-left-pattern-con {
+  .mobile-hero-right-pattern-con,
+  .mobile-hero-left-pattern-con {
     display: block;
     position: relative;
   }
-  .mobile-hero-right-pattern-con img, .mobile-hero-left-pattern-con img {
+  .mobile-hero-right-pattern-con img,
+  .mobile-hero-left-pattern-con img {
     position: absolute;
   }
   .mobile-hero-left-pattern-con img {
