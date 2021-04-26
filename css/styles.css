@@ -49,10 +49,6 @@ header nav ul li:hover {
   color: #2d2640;
 }
 
-header .mobile-nav {
-  display: none;
-}
-
 .pattern-img-con #pattern-left {
   position: absolute;
   top: 350px;
@@ -65,6 +61,15 @@ header .mobile-nav {
   height: 400px;
   width: 30%;
   right: 0px;
+}
+
+.hide-nav {
+  display: none;
+}
+
+.mobile-hero-left-pattern-con,
+.mobile-hero-right-pattern-con {
+  display: none;
 }
 
 #hero-section {
@@ -107,12 +112,12 @@ header .mobile-nav {
   color: #fafafa;
   border: 1px solid #fafafa;
   text-transform: uppercase;
-  width: 30%;
+  width: 150px;
   padding: 10px 2%;
 }
 
 #why-us-main-con,
-#how-we-work {
+.how-we-work-flex-con {
   margin: 0px 12%;
 }
 
@@ -148,7 +153,7 @@ header .mobile-nav {
   grid-area: people;
 }
 
-#how-we-work {
+#how-we-work .how-we-work-flex-con {
   display: grid;
   grid-template-columns: 50% 20%;
   grid-template-rows: 80px;
@@ -156,21 +161,18 @@ header .mobile-nav {
   background-color: #2d2640;
   column-gap: 20%;
   color: #fafafa;
-  background-image: url("../images/bg-pattern-intro-right-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: 590px -160px;
   margin-bottom: 100px;
   height: 200px;
 }
 
-#how-we-work h2 {
+#how-we-work .how-we-work-flex-con h2 {
   padding-right: 18%;
   font-size: 2.5em;
   width: 100%;
 }
 
-#how-we-work .btn {
-  width: 80%;
+#how-we-work .how-we-work-flex-con .btn {
+  width: 150px;
   height: 30px;
   text-transform: uppercase;
   padding: 0 4%;
@@ -181,9 +183,46 @@ header .mobile-nav {
   cursor: pointer;
 }
 
+#how-we-work .pattern-con {
+  position: relative;
+  width: 100%;
+}
+
+#how-we-work .pattern-con img {
+  position: absolute;
+  width: 350px;
+}
+
+#how-we-work .pattern-con img:first-child {
+  right: 160px;
+  top: -300px;
+}
+
+#how-we-work .pattern-con img:last-child {
+  display: none;
+}
+
 footer {
   padding: 60px 12%;
   background-color: #fafafa;
+}
+
+footer .footer-pattern-con {
+  position: relative;
+}
+
+footer .footer-pattern-con img {
+  position: absolute;
+}
+
+footer .footer-pattern-con img:first-child {
+  width: 450px;
+  left: -150px;
+  top: -60px;
+}
+
+footer .footer-pattern-con img:last-child {
+  display: none;
 }
 
 footer #images-con {
@@ -228,29 +267,31 @@ footer #details .links {
   header nav {
     width: 60%;
   }
-  #how-we-work {
+  #how-we-work-flex-con {
     column-gap: 20%;
   }
-  #how-we-work h2 {
+  #how-we-work-flex-con h2 {
     padding-right: 15%;
     font-size: 2.5em;
     width: 100%;
   }
-  #how-we-work .btn {
+  #how-we-work-flex-con .btn {
     width: 80%;
   }
 }
 
-@media screen and (max-width: 1200px) and (max-width: 1048px) {
+@media screen and (max-width: 1048px) {
   body {
     text-align: center;
+    position: relative;
+    overflow-x: hidden;
   }
-  #how-we-work h2 {
+  #how-we-work-flex-con h2 {
     padding-right: 1%;
     font-size: 2.3em;
     width: 100%;
   }
-  #how-we-work .btn {
+  #how-we-work-flex-con .btn {
     width: 100%;
     font-size: 0.8em;
   }
@@ -263,31 +304,76 @@ footer #details .links {
   header nav {
     display: none;
   }
-  header .mobile-nav {
+  header .mobile-nav-controls {
     display: block;
     cursor: pointer;
+    position: relative;
   }
-  header .mobile-nav #cross {
+  header .mobile-nav-controls #cross {
+    position: absolute;
+    right: 1px;
+    top: 0px;
+  }
+  header .mobile-nav-controls .close-menu {
     display: none;
   }
-  #hero-section {
-    height: 850px;
+  header .mobile-nav-controls .close-hamburger {
+    display: none;
+  }
+  .pattern-img-con {
+    display: none;
+  }
+  .mobile-nav {
+    display: none;
+    background-color: #2b272f;
+    height: 500px;
+    height: auto;
     padding: 0px;
-    margin-bottom: 100px;
+    padding-top: 50px;
+    font-size: 1.2em;
+  }
+  .mobile-nav ul {
+    margin-bottom: 70px;
+  }
+  .mobile-nav ul li {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: #fafafa;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .mobile-nav ul li:hover {
+    border: 2px solid #fafafa;
+    cursor: pointer;
+  }
+  .mobile-nav .mobile-nav-pattern-con {
+    width: 100%;
+  }
+  .mobile-nav .mobile-nav-pattern-con img {
+    width: 100%;
+  }
+  .show-nav {
+    display: block;
+  }
+  #hero-section {
+    height: auto;
+    padding: 0px;
+    padding-bottom: 30px;
     display: block;
   }
   #hero-section #hero-img-con {
-    height: 300px;
+    height: 500px;
     width: 100%;
   }
   #hero-section #hero-img-con img {
-    height: 300px;
+    height: 500px;
     width: 100%;
     margin-top: 0px;
   }
   #hero-section #hero-text-con {
-    margin-top: 90px;
-    padding: 0 10%;
+    margin-top: 80px;
+    padding: 0px 10%;
+    margin-bottom: 100px;
     text-align: center;
   }
   #hero-section #hero-text-con h1 {
@@ -298,9 +384,76 @@ footer #details .links {
     font-size: 2em;
     margin-bottom: 20px;
   }
+  .mobile-hero-right-pattern-con, .mobile-hero-left-pattern-con {
+    display: block;
+    position: relative;
+  }
+  .mobile-hero-right-pattern-con img, .mobile-hero-left-pattern-con img {
+    position: absolute;
+  }
+  .mobile-hero-left-pattern-con img {
+    left: 0px;
+    width: 300px;
+  }
+  .mobile-hero-right-pattern-con img {
+    width: 180px;
+    top: -500px;
+    right: 0px;
+  }
   #why-us-main-con h1 {
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 40px;
+  }
+  #why-us-main-con #why-us-grid-con {
+    display: block;
+    margin-bottom: 100px;
+  }
+  #why-us-main-con #why-us-grid-con .why-us-min-con p {
+    font-size: 0.7em;
+  }
+  #why-us-main-con #why-us-grid-con .why-us-min-con {
+    padding: 0px 10%;
+    font-size: 2em;
+  }
+  #why-us-main-con #why-us-grid-con .why-us-min-con p {
+    color: #837d87;
+  }
+  #how-we-work .how-we-work-flex-con {
+    display: block;
+    padding: 30px 10%;
+    height: 250px;
+  }
+  #how-we-work .how-we-work-flex-con h2 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-right: 0px;
+  }
+  #how-we-work .how-we-work-flex-con .btn {
+    width: 150px;
+    margin-bottom: 40px;
+  }
+  #how-we-work .pattern-con {
+    position: relative;
+    width: 100%;
+  }
+  #how-we-work .pattern-con img {
+    position: absolute;
+    width: 350px;
+  }
+  #how-we-work .pattern-con img:first-child {
+    display: none;
+  }
+  #how-we-work .pattern-con img:last-child {
+    display: block;
+    width: 140px;
+    top: -350px;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #why-us-main-con h1 {
+    font-size: 2em;
   }
   #why-us-main-con #why-us-grid-con {
     display: block;
@@ -311,64 +464,42 @@ footer #details .links {
   #why-us-main-con #why-us-grid-con .why-us-min-con p {
     margin-bottom: 15px;
   }
-  #why-us-main-con #why-us-grid-con .why-us-min-con {
-    padding: 0px 10%;
-    font-size: 2em;
-  }
   #why-us-main-con #why-us-grid-con .why-us-min-con p {
+    font-size: 0.6em;
     color: #837d87;
-  }
-  #how-we-work {
-    display: block;
-    padding: 30px 20%;
-    height: 250px;
-  }
-  #how-we-work h2 {
-    font-size: 2em;
-    font-weight: 600;
-    padding-right: 0px;
-  }
-  #how-we-work .btn {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  #how-we-work {
-    display: block;
-    padding: 30px 10%;
-    height: 200px;
-  }
-  #how-we-work h2 {
-    font-size: 2em;
-    font-weight: 600;
-    padding-right: 0px;
-  }
-  #how-we-work .btn {
-    width: 50%;
   }
 }
 
 @media screen and (max-width: 540px) {
+  footer {
+    padding-top: 100px;
+  }
+  footer #images-con {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+  }
   footer #details {
     display: block;
   }
   footer ul {
     margin-bottom: 50px;
   }
-}
-
-@media screen and (max-width: 480px) {
-  #how-we-work {
+  footer .footer-pattern-con {
+    position: relative;
+  }
+  footer .footer-pattern-con img {
+    position: absolute;
+    width: 100%;
+  }
+  footer .footer-pattern-con img:first-child {
+    display: none;
+  }
+  footer .footer-pattern-con img:last-child {
     display: block;
-    padding: 30px 10%;
-    height: 250px;
-  }
-  #how-we-work h2 {
-    padding-right: 0px;
-  }
-  #how-we-work .btn {
-    width: 60%;
+    width: 350px;
+    left: -40px;
+    top: -90px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -32,24 +32,24 @@
       <div id="logo-con">
         <img src="../images/logo.svg" alt="logo" />
       </div>
-      <nav id="nav-con">
-        <ul class="nav-list">
+      <nav  class=''>
+        <ul>
           <li>How we work</li>
           <li>Blog</li>
           <li>Account</li>
           <li>View plans</li>
         </ul>
       </nav>
-      <div class="mobile-nav">
-        <span id="harmburger" class="open-menu">
-          <img src="../images/icon-hamburger.svg" alt="harmburger-menu" />
+      <div class="mobile-nav-controls">
+        <span id="hamburger" class="open-menu">
+          <img src="../images/icon-hamburger.svg" alt="hamburger-menu" />
         </span>
-        <span class="close-menu" id="cross">
+        <span class="close-menu cross" id="cross">
           <img src="../images/icon-close.svg" alt="close" />
         </span>
       </div>
     </header>
-    <div class="pattern-img-con">
+    <div class="pattern-img-con hide-desktop-pattern">
       <img
         src="../images/bg-pattern-intro-left-desktop.svg"
         alt="pattern-left"
@@ -61,19 +61,30 @@
         id="pattern-right"
       />
     </div>
+     <nav id="nav-con" class='mobile-nav'>
+        <ul class="nav-list">
+          <li>How we work</li>
+          <li>Blog</li>
+          <li>Account</li>
+          <li>View plans</li>
+        </ul>
+        <div class="mobile-nav-pattern-con hide-mobile-pattern">
+          <img src='../images/bg-pattern-mobile-nav.svg'/>
+        </div>
+      </nav>
     <!-- Hero Section -->
     <section id="hero-section">
       <!-- hero image -->
       <div id="hero-img-con">
         <img
-          srcset="
-            ../images/image-intro-mobile.jpg,
-            ../images/image-intro-desktop.jpg 1440w
-          "
           src="../images/image-intro-mobile.jpg"
           alt=""
         />
       </div>
+      <div class="mobile-hero-left-pattern-con hide-mobile-pattern">
+        <img src="../images/bg-pattern-intro-left-mobile.svg" alt="intro-left-mobile" id='left-pattern-mobile'/>
+      </div>
+      
       <div id="hero-text-con">
         <h1>Humanizing your insurance.</h1>
         <p>
@@ -82,8 +93,12 @@
           you. Ensure you and your loved ones are protected.
         </p>
         <button id="hero-btn" class="btn">View plans</button>
+        
       </div>
     </section>
+    <div class="mobile-hero-right-pattern-con hide-mobile-pattern">
+        <img src="../images/bg-pattern-intro-right-mobile.svg" alt="bg-pattern-intro-right-mobile" id='right-pattern-mobile'/>
+      </div>
     <!-- The Why Choose Us Section -->
     <section id="why-us-main-con">
       <h1>We’re different</h1>
@@ -119,11 +134,21 @@
     </section>
     <!-- How We Work Section -->
     <section id="how-we-work">
-      <h2>Find out more about how we work</h2>
-      <button id="how-we-work-btn" class="btn">How We Work</button>
+      <div class="how-we-work-flex-con">
+        <h2>Find out more about how we work</h2>
+        <button id="how-we-work-btn" class="btn">How We Work</button>
+      </div>
+      <div class="pattern-con hide-desktop-pattern" >
+        <img src="./images/bg-pattern-how-we-work-desktop.svg"  alt=""/>
+        <img src="./images/bg-pattern-how-we-work-mobile.svg" alt=""/>
+      </div>
     </section>
     <footer>
       <!-- The Footer Images container -->
+      <div class="footer-pattern-con">
+        <img src="./images/bg-pattern-footer-desktop.svg"  alt=""/>
+        <img src="./images/bg-pattern-footer-mobile.svg" alt=""/>
+      </div>
       <section id="images-con">
         <img src="../images/logo.svg" alt="logo" />
         <div id="social-media-img-con">
