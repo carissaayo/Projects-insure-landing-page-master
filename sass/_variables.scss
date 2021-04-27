@@ -1,15 +1,14 @@
-$VeryDarkViolet :hsl(270, 9%, 17%);
-$DarkGrayishViolet:hsl(273, 4%, 51%) ;
+$VeryDarkViolet: hsl(270, 9%, 17%);
+$DarkGrayishViolet: hsl(273, 4%, 51%);
 $VeryLightGray: hsl(0, 0%, 98%);
 $DarkViolet: hsl(256, 26%, 20%);
 $GrayishBlue: hsl(216, 30%, 68%);
 
-
-@mixin flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-@mixin cursor{
-    cursor: pointer;
+@mixin cursor {
+  cursor: pointer;
 }

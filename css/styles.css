@@ -46,6 +46,7 @@ header nav ul {
 
 header nav ul li {
   padding: 5px 10px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #837d87;
 }
@@ -54,6 +55,15 @@ header nav ul li:hover {
   border: 2px solid #2d2640;
   cursor: pointer;
   color: #2d2640;
+}
+
+header nav ul .link-clicked {
+  background-color: #2d2640;
+  color: #fafafa;
+}
+
+header nav ul .link-clicked:hover {
+  color: #fafafa;
 }
 
 header .mobile-nav-controls {
@@ -125,6 +135,12 @@ header .mobile-nav-controls {
   text-transform: uppercase;
   width: 150px;
   padding: 10px 2%;
+  cursor: pointer;
+}
+
+#hero-section #hero-text-con button:hover {
+  background-color: #fafafa;
+  color: #2b272f;
 }
 
 #why-us-main-con,
@@ -182,7 +198,7 @@ header .mobile-nav-controls {
   width: 100%;
 }
 
-#how-we-work .how-we-work-flex-con .btn {
+#how-we-work .how-we-work-flex-con button {
   width: 150px;
   height: 30px;
   text-transform: uppercase;
@@ -192,6 +208,12 @@ header .mobile-nav-controls {
   color: #fafafa;
   border: 1px solid #fafafa;
   cursor: pointer;
+  z-index: 20;
+}
+
+#how-we-work .how-we-work-flex-con button:hover {
+  background-color: #fafafa;
+  color: #2b272f;
 }
 
 #how-we-work .pattern-con {
@@ -243,6 +265,10 @@ footer #images-con {
   border-bottom: 1px solid #95a9c6;
   padding-bottom: 20px;
   margin-bottom: 50px;
+}
+
+footer #images-con #social-media-img-con img:hover {
+  cursor: pointer;
 }
 
 footer #details {
@@ -344,7 +370,7 @@ footer #details .links {
     margin-bottom: 70px;
   }
   .show-nav-con ul li {
-    padding: 5px 10px;
+    padding: 5px 20%;
     text-transform: uppercase;
     color: #fafafa;
     width: 100%;

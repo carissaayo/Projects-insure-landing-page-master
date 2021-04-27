@@ -12,6 +12,7 @@ body {
   font-weight: 400;
   font-family: "Karla", sans-serif;
 }
+
 h1,
 h2,
 h4 {
@@ -31,8 +32,10 @@ header {
     width: 50%;
     ul {
       @include flex();
+     
       li {
         padding: 5px 10px;
+        font-size: 14px;
         text-transform: uppercase;
         &:hover {
           border: 2px solid $DarkViolet;
@@ -43,9 +46,16 @@ header {
       }
       list-style: none;
       width: 100%;
+       .link-clicked{
+        background-color: $DarkViolet;
+        color: $VeryLightGray;
+        &:hover{
+          color:$VeryLightGray;
+        }
+      }
     }
   }
-  .mobile-nav-controls{
+  .mobile-nav-controls {
     display: none;
   }
 }
@@ -68,7 +78,7 @@ header {
 .mobile-hero-right-pattern-con {
   display: none;
 }
-.mobile-nav{
+.mobile-nav {
   display: none;
 }
 
@@ -106,6 +116,11 @@ header {
       text-transform: uppercase;
       width: 150px;
       padding: 10px 2%;
+      @include cursor();
+      &:hover {
+        background-color: $VeryLightGray;
+        color: $VeryDarkViolet;
+      }
     }
   }
 }
@@ -159,7 +174,7 @@ header {
       font-size: 2.5em;
       width: 100%;
     }
-    .btn {
+    button {
       width: 150px;
       height: 30px;
       text-transform: uppercase;
@@ -169,6 +184,12 @@ header {
       color: $VeryLightGray;
       border: 1px solid $VeryLightGray;
       @include cursor();
+      z-index: 20;
+
+      &:hover {
+        background-color: $VeryLightGray;
+        color: $VeryDarkViolet;
+      }
     }
   }
   .pattern-con {
@@ -181,6 +202,7 @@ header {
     img:first-child {
       right: 160px;
       top: -300px;
+      // z-index: -1;
     }
     img:last-child {
       display: none;
@@ -210,6 +232,12 @@ footer {
     border-bottom: 1px solid $GrayishBlue;
     padding-bottom: 20px;
     margin-bottom: 50px;
+    #social-media-img-con{
+      img:hover{  
+        @include cursor();
+      }
+    }
+    
   }
   #details {
     @include flex();
