@@ -368,10 +368,11 @@ footer #details .links {
   }
   .show-nav-con ul {
     margin-bottom: 70px;
+    list-style: none;
   }
   .show-nav-con ul li {
     padding: 5px 20%;
-    margin: 0px 20%;
+    margin: 0px 20px;
     text-transform: uppercase;
     color: #fafafa;
     width: 100%;
