@@ -12,6 +12,9 @@ body {
   font-weight: 400;
   font-family: "Karla", sans-serif;
 }
+body * {
+  transition: linear 0.6s;
+}
 
 h1,
 h2,
@@ -32,7 +35,7 @@ header {
     width: 50%;
     ul {
       @include flex();
-     
+
       li {
         padding: 5px 10px;
         font-size: 14px;
@@ -46,11 +49,11 @@ header {
       }
       list-style: none;
       width: 100%;
-       .link-clicked{
+      .link-clicked {
         background-color: $DarkViolet;
         color: $VeryLightGray;
-        &:hover{
-          color:$VeryLightGray;
+        &:hover {
+          color: $VeryLightGray;
         }
       }
     }
@@ -232,12 +235,11 @@ footer {
     border-bottom: 1px solid $GrayishBlue;
     padding-bottom: 20px;
     margin-bottom: 50px;
-    #social-media-img-con{
-      img:hover{  
+    #social-media-img-con {
+      img:hover {
         @include cursor();
       }
     }
-    
   }
   #details {
     @include flex();
